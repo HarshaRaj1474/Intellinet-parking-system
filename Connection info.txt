@@ -1,0 +1,28 @@
+## Intelligent Parking System Hardware Setup (Arduino Uno/Nano)
+
+**Components:**
+
+* Arduino Uno or Nano microcontroller board
+* Two infrared (IR) sensors
+* Servo motor
+* I2C character display
+
+**Connections:**
+
+1. **IR Sensor (Vehicle Detection):** Connect the "OUT" pin of the first IR sensor to any digital pin between D2 and D11 (pins 2 to 11) on the Arduino.
+2. **Servo Motor (Gate Control):** Connect the servo motor control signal pin to digital pin D13 (pin 13) on the Arduino.
+3. **I2C Display:** Connect the display's SDA (Serial Data) pin to analog pin A4 (pin 20) and the SCL (Serial Clock) pin to analog pin A5 (pin 21) on the Arduino.
+4. **IR Sensor (Gate Activation):** Connect the "OUT" pin of the second IR sensor to digital pin D12 (pin 12) on the Arduino.
+
+**Power Connections:**
+
+* Connect the Vcc (power) and GND (ground) pins of all components to appropriate power and ground rails on the Arduino board, following recommended voltage specifications for each component.
+
+**Note:** While the specific pin assignments for the IR sensors can be chosen within the designated range (D2-D11), ensure consistent pin usage throughout the software implementation.
+
+This revised text adheres to a professional standard format by:
+
+* **Using formal language and sentence structure.**
+* **Providing clear and concise instructions with proper terminology.**
+* **Including a note for clarity and potential customization.**
+* **Omitting references to external resources like the diagram.**
